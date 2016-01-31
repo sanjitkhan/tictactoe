@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.tictactoe.tictactoe" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".mainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+        <activity
+            android:name=".check"
+            android:label="@string/title_activity_check" >
+        </activity>
+        -->
+        <activity
+            android:name=".newalgo1"
+            android:label="@string/title_activity_newalgo1" >
+        </activity>
+        <activity
+            android:name=".withai"
+            android:label="@string/title_activity_withai" >
+        </activity>
+        <activity
+            android:name=".multiplayer"
+            android:label="@string/title_activity_multiplayer" >
+        </activity>
+        <activity
+            android:name=".bluetoothconnect"
+            android:label="@string/title_activity_bluetoothconnect" >
+        </activity>
+        <activity
+            android:name=".bt_result"
+            android:label="@string/title_activity_bt_result" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".mainActivity"
+    android:background="#ffb97a57">
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="60dp"
+        android:background="@drawable/back_head">
+    </LinearLayout>
+
+    <TableLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="30dp"
+        android:divider="@drawable/white"
+        android:showDividers="middle|beginning|end">
+
+        <TableRow
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:divider="@drawable/white"
+            android:showDividers="middle|beginning|end">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button1"
+                android:layout_column="0"
+                android:background="@drawable/back" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button2"
+                android:background="@drawable/back"
+                android:layout_column="1"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"
+                android:id="@+id/button3"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/white"
+            android:showDividers="middle|beginning|end">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button4"
+                android:background="@drawable/back"
+                android:layout_column="0"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"
+                android:id="@+id/button5"
+                android:layout_column="1"
+                android:singleLine="true" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button6"
+                android:background="@drawable/back"
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:divider="@drawable/white"
+            android:showDividers="middle|beginning|end">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back"
+                android:id="@+id/button7"
+                android:layout_column="0" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button8"
+                android:background="@drawable/back"
+                android:layout_column="1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button9"
+                android:background="@drawable/back"
+                android:layout_column="2"
+                android:singleLine="false" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="430dp"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/p1name"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:paddingTop="10dp"
+                android:lines="3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  -  "
+                android:id="@+id/extra1"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/p1score"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingRight="30dp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgdiv"
+                android:background="@drawable/score_div"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:id="@+id/p2score"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingLeft="30dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  -  "
+                android:id="@+id/extra2"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/p2name"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:lines="3" />
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

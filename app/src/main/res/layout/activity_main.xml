@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".mainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/main">
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="VS HUMAN"
+        android:id="@+id/button"
+        android:onClick="newgamevshuman"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="VS AI"
+        android:id="@+id/button10"
+        android:onClick="newgamevsai"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="10dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="EXIT"
+        android:id="@+id/exitbutton"
+        android:onClick="timetoleave"
+        android:background="#FFFFFF"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="MULTIPLAYER"
+        android:onClick="multiplayer"
+        android:id="@+id/multip"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
